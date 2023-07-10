@@ -71,10 +71,10 @@ a {
     text-decoration: none;
 }
 
-img {
+ img {
     max-width: 100%;
     display: block;
-}
+} 
 
 
 .contenedor {
@@ -298,11 +298,9 @@ Slider */
     
    
   }
-
-  .swiper-wrapper li{
-    text-decoration: none;
-  }
   
+ 
+
   .swiper-button-next,
   .swiper-button-prev {
     color:var(--FuerteGris);
@@ -321,6 +319,7 @@ Slider */
   .swiper-slide {
     background-position: center;
     background-size: cover;
+    list-style: none;
   }
 
   .swiper-slide img {

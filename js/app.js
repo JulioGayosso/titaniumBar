@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(){
 
     eventListeners();
+    slider()
 });
 
 function eventListeners(){
@@ -18,7 +19,9 @@ function navegacionResponsive(){
    
 }
 
-var swiper = new Swiper(".swiper", {
+function slider(){
+
+  var swiper = new Swiper(".swiper", {
     effect: "cube",
     grabCursor: true,
     cubeEffect: {
@@ -26,16 +29,14 @@ var swiper = new Swiper(".swiper", {
       slideShadows: true,
       shadowOffset: 20,
       shadowScale: 0.94,
-      
     },
     pagination: {
       el: ".swiper-pagination",
-      
     },
-    
     autoplay:{
         delay:5000
     },
+  });
 
-    
-  }); 
+}
+
