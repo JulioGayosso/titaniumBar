@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded',function(){
 
     eventListeners();
-    slider()
+    slider();
+    navegacionFija();
+    scrollNav();
+
 });
 
 function eventListeners(){
@@ -40,3 +43,39 @@ function slider(){
 
 }
 
+
+// Función para aplicar la navegación fija
+function navegacionFija() {
+  const barra = document.querySelector('.navegacion');
+  const sobreFestival = document.querySelector('.bienvenida__heading');
+  /* const body = document.querySelector('body'); */
+
+  window.addEventListener('scroll', function() {
+    
+    if (sobreFestival.getBoundingClientRect().bottom < 0) {
+      
+      barra.classList.add('fijo');
+     /*  body.classList.add('body-scroll');  */
+    } else {
+      
+     barra.classList.remove('fijo');
+      /* body.classList.remove('body-scroll');  */
+    } 
+  });
+}
+
+// Función para desplazarse suavemente al hacer clic en los enlaces de navegación
+function scrollNav() {
+  const enlaces = document.querySelectorAll('.navegacion__contenedor a');
+
+  enlaces.forEach(enlace => {
+    enlace.addEventListener('click', function(e) {
+    
+      e.preventDefault();
+
+      const seccionScroll = e.target.attributes.href.value;
+      const seccion = document.querySelector(seccionScroll);
+      seccion.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+}
