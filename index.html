@@ -191,7 +191,7 @@
   <h1>Memorias Divertidas</h1>
 
   <div class="video-container contenedor" >
-    
+
     <div class="video-item">
       <video controls>
         <source src="videos/bailando por una cubeta.mp4" type="video/mp4">
@@ -252,12 +252,59 @@
 
 
 
-<div id="contacto">
+<div id="contacto" class="contenedor" >
 
-  <h1>estas en contacto</h1>
+  <h1 class="text-center titulo">CONTÁCTANOS</h1>
+
+  <form action="enviar_formulario.php" method="POST" class="formulario" id="formulario">
+    <div class="campo">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Ingrese su nombre">
+    </div>
+    <div class="campo">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Ingrese su email">
+    </div>
+    <div class="campo">
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" placeholder="Ingrese su teléfono">
+    </div>
+    <div class="campo">
+      <label for="asunto">Asunto:</label>
+      <textarea id="asunto" placeholder="Ingrese el asunto"></textarea>
+    </div>
+    <div class="boton">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+  
+  
+  
 </div>
 
-<footer class="footer"> todos los derechos</footer>
+<footer class="footer">
+  <div class="container">
+    <header class="footer__header">
+      <div class="header__grid">
+        <div class="header__logo">
+          <img src="img/titafinal.png" alt="imagen de logo" class="logo" />
+        </div>
+        <nav class="sociales">
+          <a class="sociales__enlace" href="https/facebook.com"><span class="sociales__accesible">Facebook</span></a>
+          <a class="sociales__enlace" href="https/twitter.com"><span class="sociales__accesible">Twitter</span></a>
+          <a class="sociales__enlace" href="https/instagram.com"><span class="sociales__accesible">Instagram</span></a>
+          <a class="sociales__enlace" href="https/youtube.com"><span class="sociales__accesible">YouTube</span></a>
+          <a class="sociales__enlace" href="https/tiktok.com"><span class="sociales__accesible">TikTok</span></a>
+        </nav>
+      </div>
+    </header>
+    <div class="footer__content">
+      <p class="rights">TODOS LOS DERECHOS RESERVADOS, TITANIUM ANTRO – BAR 2023 </p>
+    </div>
+  </div>
+</footer>
+
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   
