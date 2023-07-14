@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(){
 
     eventListeners();
-    slider();
+   /*  slider(); */
     scrollNav();
    /*  navegacionFija(); */
 
