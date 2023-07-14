@@ -328,7 +328,7 @@ Estilos Slider */
   @media (max-width: 580px) {
     .slider__section {
       display: flex;
-      justify-content: cover;
+      justify-content: contain;
     }
   
     .slider__section img {
@@ -782,3 +782,58 @@ Nosotros */
     } 
     
 } */
+
+/* estilos de memorias */
+
+#memorias {
+    position: relative;
+    background-color: rgba(70, 130, 180, 0.2);
+    margin-top: 5rem;
+  }
+  
+  #memorias h1 {
+    text-align: center;
+    padding: 2rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 5rem;
+    color: var(--AzulTinta);
+  }
+  
+  .video-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 1rem; /* Ajusta este valor según tus preferencias */
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: var(--fuenteSecundaria);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .video-item {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border: 4px solid var(--AzulTinta);
+    border-radius: 8px;
+  }
+  
+  .video-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
