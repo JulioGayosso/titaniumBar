@@ -142,3 +142,16 @@ function scrollToBottom() {
     behavior: 'smooth'
   });
 }
+
+// Obtener referencias a los elementos
+const audioPlayer = document.getElementById('audioPlayer');
+const playPauseButton = document.getElementById('playPauseButton');
+
+// Agregar evento de clic al botón
+playPauseButton.addEventListener('click', function() {
+  if (audioPlayer.paused) {
+    audioPlayer.play(); // Reproducir la canción si está pausada
+  } else {
+    audioPlayer.pause(); // Pausar la canción si está reproduciéndose
+  }
+});
