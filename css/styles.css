@@ -115,6 +115,22 @@ a {
     background-color: var(--dorado2);
 }
 
+.headingBorder{
+    font-size: 2.6rem;
+     color:var(--dorado2);
+     display: inline-block;
+     margin-top: 5rem;
+}
+
+.headingBorder::after{
+    content:'';
+    background-color:var(--dorado);
+    height: 1rem;
+    width:calc(100% + 1rem) ;
+    display: block;
+    margin:-1.4rem 0 0 0;
+}
+
 
 
 
@@ -918,7 +934,7 @@ Nosotros */
   
     .boton {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
     }
   }
   
@@ -1000,3 +1016,82 @@ Nosotros */
     font-family: var(--fuentePrincipal);
   }
   
+
+  /* estilos del whatsApp */
+
+  /* 
+ estilos del boton whatsapp
+ */
+
+ .container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 2rem;
+    transition: ease 1s;
+}
+
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+.scroll-link {
+    position: fixed;
+    top: 50%;
+    right: -50px; /* Posición inicial fuera de la pantalla */
+    width: 50px;
+    height: 100px;
+    background-color: var(--AzulMarino);
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s, right 0.3s;
+    cursor: pointer;
+    z-index: 9999; /* Establece un valor alto de z-index */
+  }
+  
+  .scroll-link:hover {
+    opacity: 0.7;
+  }
+  
+  #scrollUp {
+    top: 30px;
+    transform: rotate(-90deg); /* Rotar la flecha */
+  }
+  
+  #scrollDown {
+    bottom: 30px;
+    transform: rotate(90deg); /* Rotar la flecha */
+  }
+  
+  .scroll-show {
+    right: 20px; /* Posición en la pantalla */
+    opacity: 1;
+    z-index: 9999; /* Establece un valor alto de z-index */
+  }
+  
+

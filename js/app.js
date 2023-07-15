@@ -108,3 +108,37 @@ function mostrarAlerta(mensaje, tipo) {
 // Agregamos el evento submit al formulario
 const formulario = document.querySelector('#formulario');
 formulario.addEventListener('submit', validarFormulario);
+
+
+//flechas
+window.addEventListener('scroll', function() {
+  var scrollUp = document.getElementById('scrollUp');
+  var scrollDown = document.getElementById('scrollDown');
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+    scrollUp.classList.add('scroll-show');
+  } else {
+    scrollUp.classList.remove('scroll-show');
+  }
+
+  if (scrollPosition < (document.documentElement.scrollHeight - window.innerHeight)) {
+    scrollDown.classList.add('scroll-show');
+  } else {
+    scrollDown.classList.remove('scroll-show');
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function scrollToBottom() {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: 'smooth'
+  });
+}
