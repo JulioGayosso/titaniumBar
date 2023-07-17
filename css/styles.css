@@ -661,6 +661,9 @@ Nosotros */
    @media (min-width: 768px) { 
     .nosotros__contenido{
         margin-top: 0;
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: bold;
     }
    }
 
