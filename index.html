@@ -33,6 +33,7 @@
 </head>
 
 <body>
+
   <header class="header contenedor">
     <div class="header__grid">
       <div class="header__logo">
@@ -48,7 +49,7 @@
       </nav>
     </div>
 
-    <audio id="audioPlayer" autoplay>
+    <audio id="audioPlayer">
       <source src="/music/volver.mp3" type="audio/mpeg">
     </audio>
 
@@ -63,11 +64,9 @@
     </a>
   </div>
 
+<!--   flechas -->
   <div id="scrollUp" class="scroll-link" onclick="scrollToTop()"></div>
-<div id="scrollDown" class="scroll-link" onclick="scrollToBottom()"></div>
-
-  
-
+  <div id="scrollDown" class="scroll-link" onclick="scrollToBottom()"></div>
   
 
   <div id="inicio" class="navegacion fijo">
@@ -94,13 +93,13 @@
           <img src="img/prueba.jpg" alt="">
         </div>
         <div class="slider__section">
-          <img src="img/prueba.jpg" alt="">
+          <img src="img/slide_01.jpg" alt="">
         </div>
         <div class="slider__section">
-          <img src="img/prueba.jpg" alt="">
+          <img src="img/slide_02.jpg" alt="">
         </div>
         <div class="slider__section">
-          <img src="img/prueba.jpg" alt="">
+          <img src="img/slide_03.jpg" alt="">
         </div>
       </div>
       <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
@@ -111,7 +110,7 @@
 
   <section class="bienvenida seccion">
     <h1 class="bienvenida__heading">
-      Bienvenidos(as) a <span class="tita">"TITANIUM ANTRO BAR"</span>
+      BIENVENIDOS(as)  <span class="tita">"TITANIUM ANTRO BAR"</span>
     </h1>
 
     <p class="bienvenida__texto">
@@ -134,13 +133,13 @@
 
     <div class="direccion">
 
-      <p>"Descubre el lugar perfecto para divertirte. Aquí, en Titanium antro bar, encontrarás el escenario
+      <p>"Descubre el lugar perfecto para divertirte. Aquí, en Titanium Antro Bar, encontrarás el escenario
         ideal para crear recuerdos inolvidables. Esta es nuestra ubicación, donde la música y la alegría se fusionan. Te
         invitamos a ser parte de nuestras noches llenas de energía y diversión. Ven y únete a la fiesta, donde la buena
-        compañía, los deliciosos tragos y el ambiente vibrante te esperan. ¡Te garantizamos una experiencia única! ¡Nos
-        vemos en Titanium Antro Bar"</p>
+        compañía, los deliciosos tragos y el ambiente vibrante te esperan. <span class="ven"> ¡Te garantizamos una experiencia única! ¡Nos
+        vemos en Titanium Antro Bar"!</span> </p>
 
-      <p>Cda. Ignacio Allende 506A, Cuadrante II, Tamulte de las Barrancas,
+      <p class="calle">Cda. Ignacio Allende 506A, Cuadrante II, Tamulte de las Barrancas,
         86150 Villahermosa, Tab.</p>
 
 
@@ -180,6 +179,7 @@
   </div>
 
 
+  <div class="fondo-galeria">
 
   <div id="galeria" class="contenedor">
 
@@ -223,6 +223,8 @@
 
 
   </div> <!--  end contenedor galeria -->
+
+</div>
 
 
   <div id="memorias">
